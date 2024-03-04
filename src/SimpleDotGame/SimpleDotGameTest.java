@@ -1,4 +1,7 @@
 package SimpleDotGame;
+
+import java.util.ArrayList;
+
 public class SimpleDotGameTest {
 
     public static void main (String[] args ){
@@ -7,7 +10,11 @@ public class SimpleDotGameTest {
         SimpleDotGameHelper helper = new SimpleDotGameHelper();
 
         int randNumber = (int) (Math.random()*5);
-        int[] cellLocations = {randNumber+1,randNumber+2,randNumber+4};
+
+        ArrayList <Integer> cellLocations = new ArrayList<Integer>();
+        cellLocations.add(randNumber+1);
+        cellLocations.add(randNumber+2);
+        cellLocations.add(randNumber+3);
         dotGame.setcellLocations(cellLocations);
 
         boolean isAlive = true;
