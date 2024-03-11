@@ -68,6 +68,12 @@ public class DotComGameBust {
             System.out.println("Took you long enough. " + numOfGuess + " guesses .");
             System.out.println("Fish are dancing with your options . " ) ;
             }
-    }
+    }// close method
+
+    public static void main (String[] args){
+        DotComGameBust game = new DotComGameBust();
+        game.setUpGame();
+        game.startPlaying();
+    }//close method
 
 }
