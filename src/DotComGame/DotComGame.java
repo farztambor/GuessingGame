@@ -3,11 +3,11 @@ package DotComGame;
 import java.util.ArrayList;
 
 public class DotComGame {
-    ArrayList<Integer> cellLocations = new ArrayList<Integer>();
+    ArrayList<String> cellLocations = new ArrayList<String>();
      private String name = "";
 
 
-     public void setcellLocations(ArrayList<Integer> locations){
+     public void setcellLocations(ArrayList<String> locations){
         cellLocations = locations;
     }
      public void setName(String comName){
@@ -35,11 +35,13 @@ public class DotComGame {
        }else{
         result = "hit";
        }//close if'
-    }//close if
-       return result;
 
        
+    }//close if
+       
+
         }
+        return result;
     }//close method
  }//close class
 
