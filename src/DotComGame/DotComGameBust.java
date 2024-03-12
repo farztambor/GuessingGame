@@ -29,8 +29,8 @@ public class DotComGameBust {
 
 
         for(DotComGame dotComeSet: dotComsList){
-            ArrayList<String> newLocation = DotComGameHelper.placeDotCom(3);
-            dotComToSet.setcellLocations(newLocation);
+            ArrayList<String> newLocation = helper.placeDotCom(3);
+            dotComeSet.setcellLocations(newLocation);
         }// close for loop
 
     }//Close setUpGame method
